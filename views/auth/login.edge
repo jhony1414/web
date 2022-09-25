@@ -1,0 +1,26 @@
+@layout('../layout')
+
+@section('content')
+  <div class="card mx-auto mt-3 mb-3 w-50 shadow">
+      <div class="card-header text-center font">
+        <h4>Login</h4>
+      </div>
+      <div class="card-body">
+        <form action="/auth/login" method="POST">
+          <div class="mb-3 col-6 mx-auto">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
+          </div>
+          <div class="mb-3 col-6 mx-auto">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+          </div>
+          <div class="col-6 mx-auto">
+            <input type="submit" value="Iniciar Sesión" class="btn btn-outline-primary shadow">
+          </div>
+        </form>
+        
+        
+      </div>
+  </div>
+@endsection
